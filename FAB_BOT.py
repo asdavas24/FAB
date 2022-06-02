@@ -530,14 +530,9 @@ async def current_time():
 
   
 #-------------------------------------TOKEN----------------------------------------------------------
-keep_alive.keep_alive()
-token = os.getenv('BOT_TOKEN')
-signal.signal(signal.SIGTERM, lambda *_: client.loop.create_task(client.close()))
 
-try:
-  client.run(token)
-except:
-  os.system("kill 1")
+token =('EtlqRsp1SuFHrjMFPfctArR4vFMUz1Gv')
+
 
 #LINK PARA PROGRAMAR O BOT: ''https://replit.com/@ForcasArmadas/Forcas-Armadas-Breakpoint-BOT#main.py''
 
